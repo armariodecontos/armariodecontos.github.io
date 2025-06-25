@@ -1,0 +1,37 @@
+/* Armário de Contos */
+:root { 
+  --color-neutral: 255, 255, 255;
+  /* Azul */
+  --color-neutral-50:     185,165,243;
+  --color-neutral-100:    133,97,234;
+  --color-neutral-200:    81,31,224;
+  --color-neutral-300:    57,21,157;
+  --color-neutral-400:    32,12,89;
+  --color-neutral-500:    8,3,22;
+  --color-neutral-600:    0,0,0;
+  --color-neutral-700:    0,0,0;
+  --color-neutral-800:    0,0,0;
+  --color-neutral-900:    0,0,0;
+  /* Dourado */
+  --color-primary-50:     255,255,255;
+  --color-primary-100:    255,255,255;
+  --color-primary-200:    255,255,255;
+  --color-primary-300:    255,255,255;
+  --color-primary-400:    251,228,187;
+  --color-primary-500:    247,200,115;
+  --color-primary-600:    245,185,76;
+  --color-primary-700:    243,170,38;
+  --color-primary-800:    227,151,13;
+  --color-primary-900:    188,125,11;
+  /* Cinza */
+  --color-secondary-50:     191,191,191;
+  --color-secondary-100:    153,153,153;
+  --color-secondary-200:    115,115,115;
+  --color-secondary-300:    77,77,77;
+  --color-secondary-400:    38,38,38;
+  --color-secondary-500:    0,0,0;
+  --color-secondary-600:    0,0,0;
+  --color-secondary-700:    0,0,0;
+  --color-secondary-800:    0,0,0;
+  --color-secondary-900:    0,0,0;
+}

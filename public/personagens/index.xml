@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personagens on Armário de Contos</title>
+    <link>http://localhost:1313/personagens/</link>
+    <description>Recent content in Personagens on Armário de Contos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <managingEditor>armariodecontos@gmail.com (Armário de Contos)</managingEditor>
+    <webMaster>armariodecontos@gmail.com (Armário de Contos)</webMaster>
+    <copyright>&amp;copy; Armário de Contos</copyright>
+    <lastBuildDate>Wed, 25 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/personagens/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Antônio</title>
+      <link>http://localhost:1313/personagens/ant%C3%B4nio/</link>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate>
+      <author>armariodecontos@gmail.com (Armário de Contos)</author>
+      <guid>http://localhost:1313/personagens/ant%C3%B4nio/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>João</title>
+      <link>http://localhost:1313/personagens/jo%C3%A3o/</link>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate>
+      <author>armariodecontos@gmail.com (Armário de Contos)</author>
+      <guid>http://localhost:1313/personagens/jo%C3%A3o/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Mauricio</title>
+      <link>http://localhost:1313/personagens/mauricio/</link>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate>
+      <author>armariodecontos@gmail.com (Armário de Contos)</author>
+      <guid>http://localhost:1313/personagens/mauricio/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Vitor</title>
+      <link>http://localhost:1313/personagens/vitor/</link>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate>
+      <author>armariodecontos@gmail.com (Armário de Contos)</author>
+      <guid>http://localhost:1313/personagens/vitor/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

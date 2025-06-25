@@ -1,0 +1,55 @@
+:root { --color-neutral: 255, 255, 255;
+--color-neutral-50:     234,227,242;
+--color-neutral-100:    194,174,219;
+--color-neutral-200:    155,122,195;
+--color-neutral-300:    116,74,166;
+--color-neutral-400:    79,51,113;
+--color-neutral-500:    42,27,60;
+--color-neutral-600:    22,14,32;
+--color-neutral-700:    3,2,4;
+--color-neutral-800:    0,0,0;
+--color-neutral-900:    0,0,0;
+--color-primary-50:     255,255,255;
+--color-primary-100:    255,255,255;
+--color-primary-200:    255,255,255;
+--color-primary-300:    246,215,203;
+--color-primary-400:    236,166,137;
+--color-primary-500:    225,116,71;
+--color-primary-600:    219,89,36;
+--color-primary-700:    184,75,30;
+--color-primary-800:    149,61,24;
+--color-primary-900:    114,47,19;
+--color-secondary-50:     255,255,255;
+--color-secondary-100:    255,255,255;
+--color-secondary-200:    255,255,255;
+--color-secondary-300:    255,255,255;
+--color-secondary-400:    251,228,187;
+--color-secondary-500:    247,200,115;
+--color-secondary-600:    245,185,76;
+--color-secondary-700:    243,170,38;
+--color-secondary-800:    227,151,13;
+--color-secondary-900:    188,125,11;
+}
+
+.max-w-prose {
+  max-width: 150ch;
+}
+
+h1 {
+  text-align: center;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.lg\:ml-auto {
+  margin-left: auto;
+}
+.max-w-full {
+
+}
+
+body * {
+  justify-content: center;
+}
