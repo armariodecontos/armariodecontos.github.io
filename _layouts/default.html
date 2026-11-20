@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title and page.layout != 'home' %}{{ page.title | escape }} · {% endif %}{{ site.title | default: 'Armário de Contos' | escape }}</title>
+<meta name="description" content="{{ page.description | default: site.description | default: 'Abra a porta para uma nova história.' | escape }}">
+<meta name="theme-color" content="#1A0F2C">
+<link rel="stylesheet" href="{{ '/assets/css/liquid-glass.css' | relative_url }}">
+{% if site.plugins contains 'jekyll-feed' %}{% feed_meta %}{% endif %}
+</head>
+<body>
+<a class="skip" href="#principal">Pular para o conteúdo</a>
+<header class="topbar glass wrap">
+<a class="brand" href="{{ '/' | relative_url }}" aria-label="Armário de Contos — início">
+<img src="{{ '/assets/images/logo.png' | relative_url }}" width="76" height="76" alt="Armário de Contos" fetchpriority="high">
+</a>
+<nav aria-label="Menu principal">
+<a href="{{ '/' | relative_url }}" {% if page.layout == 'home' %}aria-current="page"{% endif %}>Início</a>
+<a href="{{ '/contos/' | relative_url }}" {% if page.permalink == '/contos/' %}aria-current="page"{% endif %}>Contos</a>
+<a href="{{ '/sobre/' | relative_url }}" {% if page.permalink == '/sobre/' %}aria-current="page"{% endif %}>Sobre</a>
+</nav>
+</header>
+<main id="principal">{{ content }}</main>
+<footer class="footer wrap">© {{ site.time | date: '%Y' }} Armário de Contos.<br><span>Abra a porta para uma nova história.</span></footer>
+</body>
+</html>

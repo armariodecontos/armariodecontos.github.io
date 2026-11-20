@@ -1,0 +1,61 @@
+{% assign story = include.post %}
+
+<article class="card glass">
+
+  {% if story.cover %}
+    <a
+      class="card-cover-link"
+      href="{{ story.url | relative_url }}"
+      aria-label="Ler conto: {{ story.title | escape }}"
+    >
+      <img
+        class="card-cover"
+        src="{{ story.cover | relative_url }}"
+        alt="{{ story.cover_alt | default: story.title | escape }}"
+        width="1280"
+        height="720"
+        loading="lazy"
+        decoding="async"
+      >
+    </a>
+  {% endif %}
+
+  <div class="card-meta">
+    {% if story.categories.size > 0 %}
+      <span class="tag">
+        {{ story.categories | first | escape }}
+      </span>
+    {% else %}
+      <span class="tag">Conto</span>
+    {% endif %}
+
+    <time datetime="{{ story.date | date_to_xmlschema }}">
+      {{ story.date | date: '%d/%m/%Y' }}
+    </time>
+  </div>
+
+  <h3>
+    <a href="{{ story.url | relative_url }}">
+      {{ story.title | escape }}
+    </a>
+  </h3>
+
+  <p class="excerpt">
+    {{ story.description
+       | default: story.excerpt
+       | strip_html
+       | normalize_whitespace
+       | truncatewords: 28
+       | escape }}
+  </p>
+
+  <a
+    class="read"
+    href="{{ story.url | relative_url }}"
+    aria-label="Ler conto: {{ story.title | escape }}"
+  >
+    Ler conto
+    <span aria-hidden="true">→</span>
+  </a>
+
+</article>

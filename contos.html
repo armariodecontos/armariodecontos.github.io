@@ -1,0 +1,6 @@
+---
+layout: default
+title: Contos
+permalink: /contos/
+---
+<section class="wrap section archive"><p class="eyebrow">Explore o armário</p><h1>Todos os contos</h1><p class="muted">Do mais recente ao primeiro: cada porta, uma história.</p><div class="grid">{% for post in site.posts %}{% include story-card.html post=post %}{% else %}<p>A primeira história está chegando.</p>{% endfor %}</div></section>
