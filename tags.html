@@ -1,0 +1,76 @@
+---
+layout: default
+title: Tags
+permalink: /tags/
+---
+
+<section class="wrap section archive">
+
+  <p class="eyebrow">Encontre sua próxima história</p>
+
+  <h1>Tags</h1>
+
+  <p class="muted">
+    Escolha uma categoria para explorar os contos.
+  </p>
+
+  {% assign categorias = site.categories | sort %}
+
+  <ul class="category-list" id="lista-categorias">
+
+    {% for categoria in categorias %}
+
+      {% assign nome = categoria[0] %}
+      {% assign quantidade = categoria[1].size %}
+      {% assign identificador = nome | slugify: 'latin' %}
+      {% assign destino = '/categorias/'
+        | append: identificador
+        | append: '/' %}
+
+      <li data-nome="{{ nome | escape }}">
+
+        <a
+          class="category-item glass"
+          href="{{ destino | relative_url }}"
+        >
+          <span>{{ nome | escape }}</span>
+
+          <span class="category-count">
+            {{ quantidade }}
+            {% if quantidade == 1 %}conto{% else %}contos{% endif %}
+          </span>
+        </a>
+
+      </li>
+
+    {% else %}
+
+      <li class="muted">
+        Ainda não há categorias publicadas.
+      </li>
+
+    {% endfor %}
+
+  </ul>
+
+</section>
+
+<script>
+  (() => {
+    const lista = document.getElementById("lista-categorias");
+
+    if (!lista) return;
+
+    const itens = [...lista.querySelectorAll("li[data-nome]")];
+
+    itens.sort((a, b) =>
+      a.dataset.nome.localeCompare(
+        b.dataset.nome,
+        "pt-BR",
+        { sensitivity: "base" }
+      )
+    );
+
+    itens.forEach(item => lista.appendChild(item));
+  })();
+</script>

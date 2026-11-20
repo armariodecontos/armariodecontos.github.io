@@ -23,6 +23,14 @@
 <nav aria-label="Menu principal">
 <a href="{{ '/' | relative_url }}" {% if page.layout == 'home' %}aria-current="page"{% endif %}>Início</a>
 <a href="{{ '/contos/' | relative_url }}" {% if page.permalink == '/contos/' %}aria-current="page"{% endif %}>Contos</a>
+<a
+  href="{{ '/tags/' | relative_url }}"
+  {% if page.permalink == '/tags/' or page.layout == 'categoria' %}
+    aria-current="page"
+  {% endif %}
+>
+  Tags
+</a>
 <a href="{{ '/sobre/' | relative_url }}" {% if page.permalink == '/sobre/' %}aria-current="page"{% endif %}>Sobre</a>
 </nav>
 </header>
