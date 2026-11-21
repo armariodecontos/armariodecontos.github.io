@@ -4,16 +4,11 @@ layout: default
 
 <section class="wrap section archive">
 
-  <a
-    class="text-link"
-    href="{{ '/tags/' | relative_url }}"
-  >
-    ← Todas as tags
+  <a class="text-link" href="{{ '/tags/' | relative_url }}">
+    {{ site.data.strings.categoria.voltar }}
   </a>
 
-  <p class="eyebrow category-eyebrow">
-    Explore esta categoria
-  </p>
+  <p class="eyebrow category-eyebrow">{{ site.data.strings.categoria.eyebrow }}</p>
 
   <h1>{{ page.categoria | escape }}</h1>
 
@@ -25,15 +20,13 @@ layout: default
       {{ posts_categoria.size }}
 
       {% if posts_categoria.size == 1 %}
-        conto nesta categoria.
+        {{ site.data.strings.categoria.singular }}
       {% else %}
-        contos nesta categoria.
+        {{ site.data.strings.categoria.plural }}
       {% endif %}
     </p>
 
-    {% assign posts_ordenados = posts_categoria
-      | sort: 'date'
-      | reverse %}
+    {% assign posts_ordenados = posts_categoria | sort: 'date' | reverse %}
 
     <div class="grid">
 
@@ -45,9 +38,7 @@ layout: default
 
   {% else %}
 
-    <p class="muted">
-      Ainda não há contos publicados nesta categoria.
-    </p>
+    <p class="muted">{{ site.data.strings.categoria.vazio }}</p>
 
   {% endif %}
 

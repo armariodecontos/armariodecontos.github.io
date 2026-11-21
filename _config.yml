@@ -1,19 +1,23 @@
----
 title: Armário de Contos
 email: armariodecontos@gmail.com
-author: "Arquiteto de Narrativas"
-description: ''
-baseurl: ''
+description: "Abra a porta para uma nova história."
 url: https://armariodecontos.github.io
-twitter_username:
+baseurl: ""
+lang: pt-BR
+timezone: America/Recife
+author: "Arquiteto de Narrativas"
 github_username: armariodecontos
+
+social:
+  youtube: https://youtube.com/@armariodecontos
+
 theme: minima
 plugins:
-- jekyll-feed
-timezone: America/Recife
+  - jekyll-feed
+
 defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: post
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

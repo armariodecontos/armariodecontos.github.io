@@ -3,4 +3,7 @@ layout: page
 title: Esta porta não existe
 permalink: /404.html
 ---
-<p>A página que você procura não foi encontrada.</p><p><a href="{{ '/' | relative_url }}">Voltar ao início →</a></p>
+
+<p>{{ site.data.strings.erro_404.mensagem }}</p>
+
+<p><a href="{{ '/' | relative_url }}">{{ site.data.strings.erro_404.voltar }}</a></p>

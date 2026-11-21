@@ -1,0 +1,43 @@
+home:
+  eyebrow: "Histórias para sentir"
+  titulo_html: "Armário <span>de Contos</span>"
+  intro: "Abra a porta para uma nova história."
+  cta: "Explorar contos"
+  recentes_titulo: "Contos recentes"
+  ver_todos: "Ver todos →"
+  vazio: "Em breve, uma nova história por aqui."
+  limite: 6
+
+contos:
+  eyebrow: "Explore o armário"
+  titulo: "Todos os contos"
+  descricao: "Do mais recente ao primeiro: cada porta, uma história."
+  voltar: "← Todos os contos"
+  vazio: "A primeira história está chegando."
+  tipo_padrao: "Conto"
+  ler: "Ler conto"
+  assinatura: "Um conto de"
+  anterior: "← Anterior"
+  proximo: "Próximo →"
+
+tags:
+  eyebrow: "Encontre sua próxima história"
+  titulo: "Tags"
+  descricao: "Escolha uma categoria para explorar os contos."
+  singular: "conto"
+  plural: "contos"
+  vazio: "Ainda não há categorias publicadas."
+
+categoria:
+  voltar: "← Todas as tags"
+  eyebrow: "Explore esta categoria"
+  singular: "conto nesta categoria."
+  plural: "contos nesta categoria."
+  vazio: "Ainda não há contos publicados nesta categoria."
+
+erro_404:
+  mensagem: "A página que você procura não foi encontrada."
+  voltar: "Voltar ao início →"
+
+footer:
+  slogan: "Abra a porta para uma nova história."

@@ -1,0 +1,15 @@
+- label: Início
+  url: /
+  active_when: home
+
+- label: Contos
+  url: /contos/
+  active_when: contos
+
+- label: Tags
+  url: /tags/
+  active_when: tags
+
+- label: Sobre
+  url: /sobre/
+  active_when: sobre

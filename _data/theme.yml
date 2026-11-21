@@ -1,0 +1,15 @@
+favicon: /assets/images/logo.png
+stylesheet: /assets/css/liquid-glass.css
+theme_color: "#1A0F2C"
+
+logo:
+  src: /assets/images/logo.png
+  width: 76
+  height: 76
+  alt: "Armário de Contos"
+
+cover:
+  width: 1280
+  height: 720
+
+excerpt_words: 28

@@ -1,4 +1,5 @@
 {% assign story = include.post %}
+{% assign strings = site.data.strings.contos %}
 
 <article class="card glass">
 
@@ -6,14 +7,14 @@
     <a
       class="card-cover-link"
       href="{{ story.url | relative_url }}"
-      aria-label="Ler conto: {{ story.title | escape }}"
+      aria-label="{{ strings.ler }}: {{ story.title | escape }}"
     >
       <img
         class="card-cover"
         src="{{ story.cover | relative_url }}"
         alt="{{ story.cover_alt | default: story.title | escape }}"
-        width="1280"
-        height="720"
+        width="{{ site.data.theme.cover.width }}"
+        height="{{ site.data.theme.cover.height }}"
         loading="lazy"
         decoding="async"
       >
@@ -26,7 +27,7 @@
         {{ story.categories | first | escape }}
       </span>
     {% else %}
-      <span class="tag">Conto</span>
+      <span class="tag">{{ strings.tipo_padrao }}</span>
     {% endif %}
 
     <time datetime="{{ story.date | date_to_xmlschema }}">
@@ -45,16 +46,16 @@
        | default: story.excerpt
        | strip_html
        | normalize_whitespace
-       | truncatewords: 28
+       | truncatewords: site.data.theme.excerpt_words
        | escape }}
   </p>
 
   <a
     class="read"
     href="{{ story.url | relative_url }}"
-    aria-label="Ler conto: {{ story.title | escape }}"
+    aria-label="{{ strings.ler }}: {{ story.title | escape }}"
   >
-    Ler conto
+    {{ strings.ler }}
     <span aria-hidden="true">→</span>
   </a>
 
