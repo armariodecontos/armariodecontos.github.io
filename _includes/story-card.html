@@ -22,6 +22,10 @@
   {% endif %}
 
   <div class="card-meta">
+    {% if story.serie %}
+      <span class="serie">{{ story.serie | escape }}</span>
+    {% endif %}
+
     {% if story.categories.size > 0 %}
       <span class="tag">
         {{ story.categories | first | escape }}
@@ -29,10 +33,6 @@
     {% else %}
       <span class="tag">{{ strings.tipo_padrao }}</span>
     {% endif %}
-
-    <time datetime="{{ story.date | date_to_xmlschema }}">
-      {{ story.date | date: '%d/%m/%Y' }}
-    </time>
   </div>
 
   <h3>
@@ -41,13 +41,16 @@
     </a>
   </h3>
 
+  {% assign sinopse = story.sinopse
+    | default: story.description
+    | default: story.excerpt %}
+
   <p class="excerpt">
-    {{ story.description
-       | default: story.excerpt
-       | strip_html
-       | normalize_whitespace
-       | truncatewords: site.data.theme.excerpt_words
-       | escape }}
+    {{ sinopse
+      | strip_html
+      | normalize_whitespace
+      | truncatewords: site.data.theme.excerpt_words
+      | escape }}
   </p>
 
   <a

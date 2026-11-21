@@ -12,7 +12,8 @@ layout: default
 
   <h1>{{ page.categoria | escape }}</h1>
 
-  {% assign posts_categoria = site.categories[page.categoria] %}
+  {% assign posts_categoria = site.contos
+  | where_exp: 'conto', 'conto.categories contains page.categoria' %}
 
   {% if posts_categoria and posts_categoria.size > 0 %}
 

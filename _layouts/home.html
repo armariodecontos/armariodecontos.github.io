@@ -31,16 +31,14 @@ layout: default
 
   </div>
 
-  {% assign posts_recentes = site.posts | sort: 'date' | reverse %}
+  {% assign contos_recentes = site.contos | sort: 'date' | reverse %}
 
-  <div class="grid">
-
-    {% for post in posts_recentes limit: site.data.strings.home.limite %}
-      {% include story-card.html post=post %}
-    {% else %}
-      <p>{{ site.data.strings.home.vazio }}</p>
-    {% endfor %}
-
-  </div>
+<div class="grid">
+  {% for conto in contos_recentes limit: site.data.strings.home.limite %}
+    {% include story-card.html post=conto %}
+  {% else %}
+    <p>{{ site.data.strings.home.vazio }}</p>
+  {% endfor %}
+</div>
 
 </section>

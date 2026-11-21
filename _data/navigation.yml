@@ -5,7 +5,11 @@
 - label: Contos
   url: /contos/
   active_when: contos
-
+  
+- label: Séries
+  url: /series/
+  acrive_when: séries
+  
 - label: Tags
   url: /tags/
   active_when: tags

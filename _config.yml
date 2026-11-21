@@ -15,9 +15,29 @@ theme: minima
 plugins:
   - jekyll-feed
 
+collections:
+  contos:
+    output: true
+    permalink: /contos/:name/
+  series:
+    output: true
+    permalink: /series/:name/
+
 defaults:
   - scope:
       path: ""
       type: posts
     values:
       layout: post
+
+  - scope:
+      path: ""
+      type: contos
+    values:
+      layout: conto
+
+  - scope:
+      path: ""
+      type: series
+    values:
+      layout: serie

@@ -1,0 +1,50 @@
+---
+layout: default
+title: Séries
+permalink: /series/
+---
+
+<section class="wrap section archive">
+
+  <p class="eyebrow">Histórias conectadas</p>
+
+  <h1>Séries</h1>
+
+  <p class="muted">
+    Explore os contos de cada série na ordem de leitura.
+  </p>
+
+  {% assign series = site.series | sort_natural: 'title' %}
+  {% assign total_series = 0 %}
+
+  <div class="grid">
+
+    {% for serie in series %}
+
+      {% assign contos = site.contos
+        | where: 'serie', serie.title
+        | sort: 'ordem' %}
+
+      {% if contos.size > 0 %}
+
+        {% assign total_series = total_series | plus: 1 %}
+        {% assign primeira = contos | first %}
+
+        {% include serie-card.html
+          serie=serie
+          capa=primeira.cover
+          quantidade=contos.size %}
+
+      {% endif %}
+
+    {% endfor %}
+
+  </div>
+
+  {% if total_series == 0 %}
+    <p class="muted">
+      Nenhuma série com contos publicados foi encontrada.
+    </p>
+  {% endif %}
+
+</section>

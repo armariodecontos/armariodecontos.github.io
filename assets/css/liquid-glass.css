@@ -196,3 +196,17 @@ a{color:var(--gold);text-underline-offset:4px}a:hover{color:#ffe3b8}button,a{-we
 .conto-assinatura span {
   color: var(--gold);
 }
+
+.avisos {
+  margin: 0.75rem 0 1.5rem;
+  padding: 0.65rem 0.9rem;
+  border-left: 3px solid var(--accent, #b58900);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 0.85rem;
+  color: var(--muted, #b8b8b8);
+}
+
+.avisos ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}

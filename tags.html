@@ -3,65 +3,30 @@ layout: default
 title: Tags
 permalink: /tags/
 ---
-
 <section class="wrap section archive">
-
   <p class="eyebrow">{{ site.data.strings.tags.eyebrow }}</p>
-
   <h1>{{ site.data.strings.tags.titulo }}</h1>
-
   <p class="muted">{{ site.data.strings.tags.descricao }}</p>
-
-  {% assign categorias = site.categories | sort %}
-
+  {% assign categorias = site.contos | map: 'categories' | compact | uniq | sort_natural %}
   <ul class="category-list" id="lista-categorias">
-
-    {% for categoria in categorias %}
-
-      {% assign nome = categoria[0] %}
-      {% assign quantidade = categoria[1].size %}
-      {% assign identificador = nome | slugify: 'latin' %}
-      {% assign destino = '/categorias/' | append: identificador | append: '/' %}
-
-      <li data-nome="{{ nome | escape }}">
-
-        <a class="category-item glass" href="{{ destino | relative_url }}">
-          <span>{{ nome | escape }}</span>
-
-          <span class="category-count">
-            {{ quantidade }}
-            {% if quantidade == 1 %}{{ site.data.strings.tags.singular }}{% else %}{{ site.data.strings.tags.plural }}{% endif %}
-          </span>
-        </a>
-
-      </li>
-
+    {% for nome in categorias %}
+      {% if nome != empty %}
+        {% assign contos = site.contos | where_exp: 'conto', 'conto.categories contains nome' %}
+        {% assign quantidade = contos.size %}
+        {% assign slug = nome | slugify: 'latin' %}
+        {% assign destino = '/categorias/' | append: slug | append: '/' %}
+        <li data-nome="{{ nome | escape }}">
+          <a class="category-item glass" href="{{ destino | relative_url }}">
+            <span>{{ nome | escape }}</span>
+            <span class="category-count">
+              {{ quantidade }}
+              {% if quantidade == 1 %}{{ site.data.strings.tags.singular }}{% else %}{{ site.data.strings.tags.plural }}{% endif %}
+            </span>
+          </a>
+        </li>
+      {% endif %}
     {% else %}
-
       <li class="muted">{{ site.data.strings.tags.vazio }}</li>
-
     {% endfor %}
-
   </ul>
-
 </section>
-
-<script>
-  (() => {
-    const lista = document.getElementById("lista-categorias");
-
-    if (!lista) return;
-
-    const itens = [...lista.querySelectorAll("li[data-nome]")];
-
-    itens.sort((a, b) =>
-      a.dataset.nome.localeCompare(
-        b.dataset.nome,
-        "pt-BR",
-        { sensitivity: "base" }
-      )
-    );
-
-    itens.forEach(item => lista.appendChild(item));
-  })();
-</script>

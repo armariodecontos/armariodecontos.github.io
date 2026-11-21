@@ -1,0 +1,9 @@
+{% if page.avisos and page.avisos.size > 0 %}
+  <aside class="avisos" aria-label="Avisos de conteúdo">
+    <ul>
+      {% for aviso in page.avisos %}
+        <li>{{ aviso | escape }}</li>
+      {% endfor %}
+    </ul>
+  </aside>
+{% endif %}

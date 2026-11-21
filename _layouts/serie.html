@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<article class="wrap section">
+
+  <header class="story-heading">
+    <p class="eyebrow">Série</p>
+    <h1>{{ page.title | escape }}</h1>
+
+    {% if page.description %}
+      <p class="intro">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  {% assign contos = site.contos
+    | where: 'serie', page.title
+    | sort: 'ordem' %}
+
+  <div class="grid">
+    {% for conto in contos %}
+      {% include story-card.html post=conto %}
+    {% else %}
+      <p>Nenhum conto foi publicado nesta série ainda.</p>
+    {% endfor %}
+  </div>
+
+</article>

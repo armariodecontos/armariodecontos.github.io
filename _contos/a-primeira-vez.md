@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: conto
 title: "A Primeira Vez"
 date: 2026-11-20 07:20:00 -0300
 categories:
@@ -8,9 +8,20 @@ categories:
   - Noiado
   - Mendigo
   - Morador de Rua
+
 description: "Minha primeira vez com um morador de rua."
 cover: "/assets/images/capas/bica4cantos.png"
 cover_alt: "Ilustração artística inspirada na Bica dos 4 Cantos, no Sítio Histórico de Olinda, com sua fonte colonial de quatro bicas, casario colorido, escadaria de pedra, igreja histórica e flores tropicais sob o céu azul de Pernambuco."
+sinopse: >-
+  Ao ir para para o trabalho, um homem encontra um morador de rua 
+  em uma bica. Lá eles seguem para uma pregação em um terreno baldio
+
+serie: "Apenas um teste"
+ordem: 1
+
+avisos:
+  - Conteúdo sexual explícito
+  - Linguagem adulta
 ---
 
 ><p align="center">Não foi a primeira vez que eu o vi, mas foi a primeira vez que eu o enxerguei de outra forma <p>

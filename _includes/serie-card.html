@@ -1,0 +1,51 @@
+{% assign serie = include.serie %}
+{% assign capa = include.capa %}
+{% assign quantidade = include.quantidade %}
+
+<article class="card glass">
+
+  {% if capa %}
+    <a
+      class="card-cover-link"
+      href="{{ serie.url | relative_url }}"
+      aria-label="Ver série: {{ serie.title | escape }}"
+    >
+      <img
+        class="card-cover"
+        src="{{ capa | relative_url }}"
+        alt="Capa da série {{ serie.title | escape }}"
+        width="{{ site.data.theme.cover.width }}"
+        height="{{ site.data.theme.cover.height }}"
+        loading="lazy"
+        decoding="async"
+      >
+    </a>
+  {% endif %}
+
+  <div class="card-meta">
+    <span class="tag">Série</span>
+    <span>{{ quantidade }} conto{% if quantidade != 1 %}s{% endif %}</span>
+  </div>
+
+  <h3>
+    <a href="{{ serie.url | relative_url }}">
+      {{ serie.title | escape }}
+    </a>
+  </h3>
+
+  {% if serie.description %}
+    <p class="excerpt">
+      {{ serie.description | escape }}
+    </p>
+  {% endif %}
+
+  <a
+    class="read"
+    href="{{ serie.url | relative_url }}"
+    aria-label="Ver série: {{ serie.title | escape }}"
+  >
+    Ver série
+    <span aria-hidden="true">→</span>
+  </a>
+
+</article>
