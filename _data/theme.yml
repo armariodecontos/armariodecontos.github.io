@@ -1,6 +1,7 @@
 favicon: /assets/images/logo.png
 stylesheet: /assets/css/liquid-glass.css
 theme_color: "#1A0F2C"
+og_image: /assets/images/capas/bica4cantos.png
 
 logo:
   src: /assets/images/logo.png

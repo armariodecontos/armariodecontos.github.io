@@ -1,31 +1,49 @@
 <!doctype html>
 <html lang="{{ site.lang }}">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if page.title and page.layout != 'home' %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
-<meta name="description" content="{{ page.description | default: site.description | escape }}">
-<meta name="theme-color" content="{{ site.data.theme.theme_color }}">
-<link rel="icon" type="image/png" href="{{ site.data.theme.favicon | relative_url }}">
-<link rel="stylesheet" href="{{ site.data.theme.stylesheet | relative_url }}">
-{% if site.plugins contains 'jekyll-feed' %}{% feed_meta %}{% endif %}
-</head>
+{% include head.html %}
 <body>
 <a class="skip" href="#principal">Pular para o conteúdo</a>
+
 <header class="topbar glass wrap">
-<a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} — início">
-<img src="{{ site.data.theme.logo.src | relative_url }}" width="{{ site.data.theme.logo.width }}" height="{{ site.data.theme.logo.height }}" alt="{{ site.data.theme.logo.alt }}" fetchpriority="high">
-</a>
-<nav aria-label="Menu principal">
-{% for item in site.data.navigation %}
-{% assign ativo = false %}
-{% if page.url == item.url %}{% assign ativo = true %}{% endif %}
-{% if item.active_when == 'tags' and page.layout == 'categoria' %}{% assign ativo = true %}{% endif %}
-<a href="{{ item.url | relative_url }}" {% if ativo %}aria-current="page"{% endif %}>{{ item.label }}</a>
-{% endfor %}
-</nav>
+  <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} — início">
+    <img
+      src="{{ site.data.theme.logo.src | relative_url }}"
+      width="{{ site.data.theme.logo.width }}"
+      height="{{ site.data.theme.logo.height }}"
+      alt="{{ site.data.theme.logo.alt }}"
+      fetchpriority="high"
+    >
+  </a>
+
+  <nav aria-label="Menu principal">
+    {% for item in site.data.navigation %}
+      {% assign ativo = false %}
+
+      {% if page.url == item.url %}
+        {% assign ativo = true %}
+      {% endif %}
+
+      {% if item.active_when == 'tags' and page.layout == 'categoria' %}
+        {% assign ativo = true %}
+      {% endif %}
+
+      <a
+        href="{{ item.url | relative_url }}"
+        {% if ativo %}aria-current="page"{% endif %}
+      >
+        {{ item.label }}
+      </a>
+    {% endfor %}
+  </nav>
 </header>
-<main id="principal">{{ content }}</main>
-<footer class="footer wrap">© {{ site.time | date: '%Y' }} {{ site.title }}.<br><span>{{ site.data.strings.footer.slogan }}</span></footer>
+
+<main id="principal">
+  {{ content }}
+</main>
+
+<footer class="footer wrap">
+  © {{ site.time | date: '%Y' }} {{ site.title }}.<br>
+  <span>{{ site.data.strings.footer.slogan }}</span>
+</footer>
 </body>
 </html>
