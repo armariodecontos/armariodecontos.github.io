@@ -50,7 +50,20 @@ layout: default
   </header>
 
   <div class="prose glass">
-    {{ content }}
+
+  {{ content }}
+
+  {% assign autor_conto = page.author | default: site.author %}
+
+  {% if autor_conto %}
+    <footer class="conto-assinatura">
+      <p>
+        Um conto de
+        <span>{{ autor_conto | escape }}</span>.
+      </p>
+    </footer>
+  {% endif %}
+
   </div>
 
   <nav class="story-nav" aria-label="Outros contos">

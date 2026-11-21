@@ -176,3 +176,23 @@ a{color:var(--gold);text-underline-offset:4px}a:hover{color:#ffe3b8}button,a{-we
     transform: none;
   }
 }
+
+/* Assinatura ao final dos contos */
+
+.conto-assinatura {
+  margin-top: 42px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+
+.conto-assinatura p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.conto-assinatura span {
+  color: var(--gold);
+}

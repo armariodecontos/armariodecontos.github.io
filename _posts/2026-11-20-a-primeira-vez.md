@@ -21,7 +21,7 @@ Me dava muito tesão olhar aquele peitoral com alguns pelos que seguiam por uma 
 
 Sempre segui o mesmo trajeto para o trabalho. Não sou muito de rotina, mas gosto de ir por onde já conheço e sinto segurança.  
 
-De forma resumida, todos os dias eu passava em frente à boca dos Quatro Cantos por volta do meio-dia e sempre via os moradores de rua tomando banho, às vezes de bermuda ou calção e às vezes de cueca.  
+De forma resumida, todos os dias eu passava em frente à bica dos Quatro Cantos por volta do meio-dia e sempre via os moradores de rua tomando banho, às vezes de bermuda ou calção e às vezes de cueca.  
 Porém ninguém chamava muito a minha atenção a ponto de eu parar para olhar mais do que o necessário. Não estou dizendo que não olhava; estou falando que não ficava mais tempo além do necessário para passar em frente à bica olhando.
 
 Mas naquele dia, ao longe, já o reconheci. Ele estava entrando na bica. Eu, que já o desejava, achei que seria uma ótima oportunidade para olhar melhor para ele, mesmo que só de cueca. Nisso, comecei a desacelerar o passo para, ao me aproximar da bica, ele já estar apenas de cueca e molhado.  
