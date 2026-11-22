@@ -1,5 +1,5 @@
 ---
 layout: serie
 title: "Contos Avulsos"
-description: "Contos desta série."
+description: "Minha primeira vez com um morador de rua."
 ---
