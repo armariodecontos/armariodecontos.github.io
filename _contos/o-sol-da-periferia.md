@@ -57,7 +57,7 @@ Antônio abraçou os dois com sua efusividade característica, um abraço aperta
 
 Antônio era bissexual assumido entre os mais próximos, e seu "tesão pelo risco" era uma constante. Fantasiava com o perigo, com ser pego, com o toque proibido. Já havia se masturbado no vestiário da escola pensando em professores mais velhos, e sim, em Maurício também. Havia uma curiosidade latente em ser dominado, e um prazer quase sádico em seduzir os mais tímidos, como Vitor, cujos olhares furtivos e suspiros contidos não lhe passavam despercebidos. Seus sonhos eróticos mais recorrentes envolviam os dois amigos juntos: Vitor beijando com delicadeza, Maurício segurando com força. Acordava duro, desejando que a realidade pudesse ser tão desinibida quanto sua imaginação. 
 
-Enquanto caminhavam em direção aos seus respectivos destinos – Maurício para suas entregas, Vitor para a farmácia, e Antônio para o mercado, mas não sem antes tentar vender alguns doces que carregava na mochila –, o sol da periferia começava a esquentar, revelando as cores e as sombras de um dia que, para os três, prometia ser 
+Enquanto caminhavam em direção aos seus respectivos destinos – Maurício para suas entregas, Vitor para a farmácia, e Antônio para o mercado, mas não sem antes tentar vender alguns doces que carregava na mochila –, o sol da periferia começava a esquentar, revelando as cores e as sombras de um dia que, para os três, prometia ser apenas mais um na superfície.
 
-apenas mais um na superfície. Mas por baixo da rotina, os olhares se despiam, os desejos fervilhavam e os segredos se acumulavam, esperando o momento certo para transbordar. 
+Mas por baixo da rotina, os olhares se despiam, os desejos fervilhavam e os segredos se acumulavam, esperando o momento certo para transbordar. 
 
