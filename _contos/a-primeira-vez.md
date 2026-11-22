@@ -16,7 +16,7 @@ sinopse: >-
   Ao ir para para o trabalho, um homem encontra um morador de rua 
   em uma bica. Lá eles seguem para uma pregação em um terreno baldio
 
-serie: "Apenas um teste"
+serie: "Contos Avulsos"
 ordem: 1
 
 avisos:

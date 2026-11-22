@@ -1,5 +1,5 @@
 ---
 layout: serie
-title: "Apenas um teste"
+title: "Contos Avulsos"
 description: "Contos desta série."
 ---
